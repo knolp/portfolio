@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="test-wrapper">
+	<div class="test-title">
+		<h1>RPG.PY</h1>
+		<p>Text-based RPG</p>
+	</div>
+	<div class="test-features">
+		<div class="column-left">
+			<p>20+ NPCS</p>
+			<p>4+ Monsters</p>
+			<p>1+ Cities</p>
+			<p>10+ Areas</p>
+			<p>10+ Skills</p>
+		</div>
+		<div class="column-middle"></div>
+		<div class="column-right">
+			<p>immersive combat system</p>
+			<p>commune with old gods</p>
+			<p>explore worlds</p>
+			<p>multiple classes</p>
+			<p>realistic quests</p>
+		</div>
+	</div>
+	<div class="divider-wrapper">
+		<div class="divider-1"></div>
+		<div class="divider-2"></div>
+		<div class="divider-3"></div>
+	</div>
+	<div class="text-image">
+		<div class="text-image-text">
+			<h1>Developed in Python</h1>
+			<p>RPG.PY has been developed in only python and is completely open-source!</p>
+		</div>
+		<div class="text-image-image">
+			<img src="{{ url_for('static', filename='rpg_python.png') }}">
+		</div>
+	</div>
+	<div class="text-image">
+		<div class="text-image-text">
+			<h1>Explore a connected world</h1>
+			<p>Multiple cities and roads connected and riddled with secret pathways and dungeons.</p>
+		</div>
+		<div class="text-image-image">
+			<img src="{{ url_for('static', filename='rpg_map.png') }}">
+		</div>
+	</div>
+	<div class="text-image">
+		<div class="text-image-text">
+			<h1>Played completely in terminal</h1>
+			<p>No need for fancy GPU/CPUS, RPG.PY is made to be played complete in terminal!</p>
+		</div>
+		<div class="text-image-image">
+			<img src="{{ url_for('static', filename='rpg_cmd.png') }}">
+		</div>
+	</div>
+</div>
+{% endblock %}

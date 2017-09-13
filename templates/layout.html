@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+	<!--<div class="blackbar-header"></div>-->
+	<div class="navbar">
+		<div class="navbar-brand">
+			<h1>RPG.PY Encyclopedia</h1>
+		</div>
+		<div class="navbar-links">
+			<a href="{{ url_for('classes') }}">Classes</a>
+			<a href="{{ url_for('bestiary') }}">Bestiary</a>
+			<a href="{{ url_for('npc') }}">Npcs</a>
+			<a href="#">Map</a>
+			<a href="#">Lore</a>
+		</div>
+	</div>
+	<div class="site-wrapper">
+		<div class="content-wrapper">
+			<div class="content">
+				{% block body %}
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+	<div class="blackbar-footer">
+		<div class="blackbar-footer-part">
+			<h1>Social Media</h1>
+			<p>Facebook</p>
+			<p>Twitter</p>
+			<p>Instagram</p>
+		</div>
+		<div class="blackbar-footer-part">
+			<h1>Contact</h1>
+			<p>Complaint form</p>
+			<p>Bug Report</p>
+			<p>Suggestions</p>
+			
+		</div>
+		<div class="blackbar-footer-part">
+			<h1>Links</h1>
+			<p>/r/rpgdotpy</p>
+			<p>RPG.PY Official Forum</p>
+			<p>Text-Rpg-Hub</p>
+		</div>
+	</div>
+</body>
+</html>

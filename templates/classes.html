@@ -1,0 +1,127 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="test-wrapper">
+	<div class="test-title">
+		<h1>Ingame Classes</h1>
+		<p>Info about the classes</p>
+	</div>
+	<div class="divider-wrapper">
+		<div class="divider-1"></div>
+		<div class="divider-2"></div>
+		<div class="divider-3"></div>
+	</div>
+	<div class="test-warrior-wrapper">
+		<div class="test-warrior-column-1">
+			<div class="img-wrapper">
+				<img src="{{ url_for('static', filename='axe.png') }}">
+			</div>
+			<h1>WarrioR</h1>
+			<p>The WarrioR class specialises in melee combat.</p>
+			<p>It is the simplest of classes, the only requirement being gear and strength, </p>
+		</div>
+		<div class="column-middle"></div>
+		<div class="test-warrior-column-1">
+			<h1>Base Stats</h1>
+			<div class="normal-flex-container">
+				<div class="column-left">
+					<p>Stamina: 2</p>
+					<p>Charisma: 2</p>
+					<p>Agility: 1</p>
+					<p></p>
+					<p>Gear:</p>
+				</div>
+				<div class="column-right">
+					<p>Strength: 4</p>
+					<p>Attunement: 0</p>
+					<p>Stealth: 0</p>
+					<p></p>
+					<p>plate set</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="divider-wrapper">
+		<div class="divider-1"></div>
+		<div class="divider-2"></div>
+		<div class="divider-3"></div>
+	</div>
+	<div class="test-warrior-wrapper">
+		<div class="test-warrior-column-1">
+			<div class="img-wrapper">
+				<img src="{{ url_for('static', filename='fire.png') }}">
+			</div>
+			<h1>MaGE</h1>
+			<p>The MaGE class specialises in magic combat.</p>
+			<p>as a wielder of magic, the mage is a person of great destiny.</p>
+		</div>
+		<div class="column-middle"></div>
+		<div class="test-warrior-column-1">
+			<h1>Base Stats</h1>
+			<div class="normal-flex-container">
+				<div class="column-left">
+					<p>Stamina: 1</p>
+					<p>Charisma: 1</p>
+					<p>Agility: 0</p>
+					<p></p>
+					<p>Gear:</p>
+				</div>
+				<div class="column-right">
+					<p>Strength: 1</p>
+					<p>Attunement: 2</p>
+					<p>Stealth: 1</p>
+					<p></p>
+					<p>cloth set</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="divider-wrapper">
+		<div class="divider-1"></div>
+		<div class="divider-2"></div>
+		<div class="divider-3"></div>
+	</div>
+	<div class="test-warrior-wrapper">
+		<div class="test-warrior-column-1">
+			<div class="img-wrapper">
+				<img src="{{ url_for('static', filename='knife.png') }}">
+			</div>
+			<h1>THIef</h1>
+			<p>The THIef class specialises in sneaky combat.</p>
+			<p>never believe what a thief tells you, and never, ever, turn your back on him.</p>
+		</div>
+		<div class="column-middle"></div>
+		<div class="test-warrior-column-1">
+			<h1>Base Stats</h1>
+			<div class="normal-flex-container">
+				<div class="column-left">
+					<p>Stamina: 1</p>
+					<p>Charisma: 0</p>
+					<p>Agility: 4</p>
+					<p></p>
+					<p>Gear:</p>
+				</div>
+				<div class="column-right">
+					<p>Strength: 3</p>
+					<p>Attunement: 0</p>
+					<p>Stealth: 2</p>
+					<p></p>
+					<p>leather set</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="margin-bottom: 2em;"></div>
+</div>
+{% endblock %}
+
+
+
+<!--
+		self.stamina = 1
+		self.charisma = 0
+		self.agility = 4
+		self.strength = 3
+		self.intelligence = 0
+		self.attunement = 0
+		self.stealth = 2
+-->

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block body %}
+<form method="post">
+	{% for item in npcs %}
+		<h1>{{ item.name }}</h1>
+		<input type="checkbox" name="{{ item.id }}"></input>
+	{% endfor %}
+	<input type="submit" name="submit" value="delete"></input>
+</form>
+<br><br><br>
+<form method="post">
+	<input type="text" name="npc-name" placeholder="Npc Name">
+	<input type="text" name="npc-background" placeholder="Background">
+	<input type="text" name="npc-location" placeholder="Location">
+	<input type="text" name="npc-quests" placeholder ="Quests">
+	<input type="submit" name="submit" value="npc-create">
+</form>
+{% endblock %}

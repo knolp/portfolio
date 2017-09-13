@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="splash">
+	<div class="top-seller-wrapper">
+		<h1>Top sellers this week:</h1>
+		{% for item in top_sellers %}
+			<div style="background-image: url({{item.image}});" class="top-seller" data-id="{{item.id}}">
+				<div class="hover-popup"><h1>{{item.name}}</h1></div>
+			</div>
+		{% endfor %}
+	</div>
+	<h1>About us:</h1>
+	<div class="about-us">
+		<div style="background-color: #046380; border-right: 1em solid #E6E2AF; margin-right: -1em; border-left: 1em solid #E6E2AF; margin-left: -1em; color: #E6E2AF;" class="about-us-container">
+			<div class="about-text">
+				<h1>Who we are:</h1>
+				<p>We are a group of VX fans who has decided to create the best environment for purchasing VX technology.</p>
+			</div>
+			<div style="border: 0.5em solid #E6E2AF" class="about-image"></div>
+		</div>
+		<div class="about-us-container">
+			<div class="about-image"></div>
+			<div class="about-text">
+				<h1>Our quality:</h1>
+				<p>Our plan is to give the everyday VX-hobbyist to gain access to the same products the large VX corporations</p>
+			</div>
+		</div>
+		<div style="background-color: #046380; border-right: 1em solid #E6E2AF; margin-right: -1em; border-left: 1em solid #E6E2AF; margin-left: -1em; color: #E6E2AF;" class="about-us-container">
+			<div class="about-text">
+				<h1>Our goals:</h1>
+				<p>We recently met our goal of helping 100,000 unique VX-enthusiast in early 2017.<br>Our future goals is to provide even more!</p>
+			</div>
+			<div style="border: 0.5em solid #E6E2AF" class="about-image"></div>
+		</div>
+	</div>
+</div>
+{% endblock %}

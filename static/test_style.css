@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Adamina');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f2f0ec;
+}
+
+
+.site-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.navbar {
+	font-family: "Adamina", serif;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	border-bottom: 1px solid #0D0D0D;
+}
+
+.navbar-brand {
+	width: 30%;
+	margin-left: 5%;
+}
+
+.navbar-brand h1 {
+	font-weight: normal;
+}
+
+.navbar-navigation {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 30%;
+	margin-left: auto;
+}
+
+.navbar-navigation a {
+	text-decoration: none;
+	color: inherit;
+	text-align: center;
+}
+
+.content-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	align-items: center;
+}
+.content-splash {
+	width: 70%;
+	height: 60vh;
+	margin-top: 5vh;
+	/*background-color: #f7dddc;*/
+	background: repeating-linear-gradient(
+	  153.3deg,
+	  #f1c8c6,
+	  #f1c8c6  600px,
+	  #f7dddc 600px,
+	  #f7dddc 1400px
+	);
+	z-index: 0;
+	border: 1px solid #f1c8c6;
+	margin-bottom: 15vh;
+}
+
+.image-deer {
+	position: relative;
+	top: -35em;
+	left: -10em;
+	transform: scale(0.5);
+	z-index: 99;
+	filter: grayscale(40%);
+}
+
+.content-splash-button {
+	font-family: "Cinzel", serif;
+	position: relative;
+	top: -63em;
+	left: 67em;
+	height: 6em;
+	width: 20em;
+	/*background-color: #222222;*/
+	border: 1px solid #222222;
+	background-color: #f2f0ec;
+	box-shadow: 10px 10px 29px -10px rgba(0,0,0,0.75);
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.content-splash-button h1 {
+	margin: 0;
+	color: #222222;
+	font-weight: normal;
+}
+
+.general-info-wrapper {
+	width: 100%;
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FAFBDC;
+}
+
+.general-info-container {
+	width: 97%;
+	height: 90%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.general-info-part {
+	width: 30%;
+	height: 100%;
+}
+
+
+
+.footer {
+
+}
+
+/*  #f1c8c6  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* REDA */
+
+.image-wrapper {
+	visibility: hidden;
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-container {
+	width: 30%;
+	height: auto;
+	overflow: hidden;
+}
+
+.image-image img {
+	filter: grayscale(100%);
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	transition: 0.2s filter opacity linear, opacity 0.2s linear;
+	-webkit-transition: 0.2s -webkit-filter linear, opacity 0.2s linear;
+	-moz-transition: 0.2s -moz-filter linear, opacity 0.2s linear;
+	-ms-transition: 0.2s -ms-filter linear, opacity 0.2s linear;
+	-o-transition: 0.2s -o-filter linear, opacity 0.2s linear;
+}
+
+.image-container:hover img {
+	-webkit-filter: grayscale(0%);
+	opacity: 0.2;
+}
+
+.image-container:hover .image-text {
+	opacity: 1;
+}
+
+.image-image {
+
+}

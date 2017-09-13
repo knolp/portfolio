@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="npc-detail-wrapper">
+	<div class="npc-detail-name">
+		<h1>{{ npc.name }}</h1>
+	</div>
+	<div class="divider-wrapper" style="width: 100%;">
+		<div class="divider-1"></div>
+		<div class="divider-2"></div>
+		<div class="divider-3"></div>
+	</div>
+	<div class="npc-detail-background-container">
+		<h1>Background:</h1>
+		<p>{{ npc.background }}</p>
+	</div>
+	<div class="divider-wrapper" style="width: 100%;">
+		<div class="divider-1"></div>
+		<div class="divider-2"></div>
+		<div class="divider-3"></div>
+	</div>
+	<div class="npc-detail-info-container">
+		<div class="npc-detail-info-quests">
+			<h1>Quests:</h1>
+			<p>{{ npc.quests }}</p>
+		</div>
+		<div class="column-divider" style="min-height: 20em;"></div>
+		<div class="npc-detail-info-location">
+			<h1>Location:</h1>
+			<p>{{ npc.location }}</p>
+		</div>
+	</div>
+</div>
+{% endblock %}
